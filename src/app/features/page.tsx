@@ -102,7 +102,7 @@ export default function FeaturesPage() {
                         src={categoryPhotos[cat.label]}
                         alt={cat.label}
                         fill
-                        className="object-cover object-top"
+                        className="object-cover object-left-top"
                         sizes="(max-width: 768px) 100vw, 40vw"
                         quality={80}
                       />
