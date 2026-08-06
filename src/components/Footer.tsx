@@ -24,7 +24,6 @@ export default function Footer() {
             {[
               { href: "/features", label: "Features" },
               { href: "/modules",  label: "Who uses it" },
-              { href: "/about",    label: "About" },
             ].map((l) => (
               <Link key={l.href} href={l.href}
                 className="block text-sm mb-3 no-underline hover:underline" style={{ color: "rgba(255,255,255,0.45)" }}>
@@ -36,7 +35,7 @@ export default function Footer() {
             <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "rgba(255,255,255,0.2)" }}>Company</div>
             {[
               { href: "/contact",  label: "Contact" },
-              { href: "/about",    label: "Our story" },
+              { href: "/about",    label: "About" },
             ].map((l) => (
               <Link key={l.href} href={l.href}
                 className="block text-sm mb-3 no-underline hover:underline" style={{ color: "rgba(255,255,255,0.45)" }}>
