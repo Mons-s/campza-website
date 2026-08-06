@@ -20,9 +20,12 @@ export default function AboutPage() {
         <div className="py-28 px-8 text-center" style={{ background: "var(--navy)" }}>
           <div className="max-w-3xl mx-auto">
             <div className="text-xs font-bold tracking-widest uppercase mb-5" style={{ color: "rgba(90,122,232,0.8)" }}>About CampZa</div>
-            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white mb-0 leading-tight" style={{ textWrap: "balance" }}>
-              We started because schools have evolved —<br className="hidden md:block" /> their software should too.
+            <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white mb-6 leading-tight" style={{ textWrap: "balance" }}>
+              School Management, Reimagined.
             </h1>
+            <p className="text-lg md:text-xl" style={{ color: "rgba(255,255,255,0.55)", textWrap: "balance" }}>
+              Built to simplify operations, empower educators, and connect every part of your school.
+            </p>
           </div>
         </div>
 
