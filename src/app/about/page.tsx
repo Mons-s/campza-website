@@ -66,7 +66,7 @@ export default function AboutPage() {
 
             {/* Photo */}
             <div className="my-12 rounded-2xl overflow-hidden relative w-full" style={{ height: 320 }}>
-              <Image src="/img-tochangethat.png" alt="CampZa was created to change that" fill className="object-contain object-center" sizes="100vw" quality={80} />
+              <Image src="/img-tochangethat.png" alt="CampZa was created to change that" fill className="object-cover object-center" sizes="100vw" quality={80} />
             </div>
 
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>
