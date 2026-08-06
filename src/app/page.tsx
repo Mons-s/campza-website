@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import AppDemo from "@/components/AppDemo";
 import Footer from "@/components/Footer";
 
 const highlights = [
@@ -69,6 +70,8 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <AppDemo />
 
         {/* Role cards */}
         <section className="py-24 px-8" style={{ background: "var(--light)" }}>
