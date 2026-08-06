@@ -97,12 +97,12 @@ export default function FeaturesPage() {
               <div key={cat.label}>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-8">
                   <div className={`md:col-span-2 ${i % 2 === 1 ? "md:order-last" : ""}`}>
-                    <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: 220 }}>
+                    <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: 320 }}>
                       <Image
                         src={categoryPhotos[cat.label]}
                         alt={cat.label}
                         fill
-                        className="object-cover object-bottom"
+                        className="object-cover object-top"
                         sizes="(max-width: 768px) 100vw, 40vw"
                         quality={80}
                       />

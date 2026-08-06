@@ -101,12 +101,12 @@ export default function ModulesPage() {
               <div key={role.label}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-10">
                   <div className={`md:col-span-1 ${i % 2 === 1 ? "md:order-last" : ""}`}>
-                    <div className="relative w-full rounded-2xl overflow-hidden mb-5" style={{ height: 180 }}>
+                    <div className="relative w-full rounded-2xl overflow-hidden mb-5" style={{ height: 280 }}>
                       <Image
                         src={rolePhotos[role.label]}
                         alt={role.label}
                         fill
-                        className="object-cover object-bottom"
+                        className="object-cover object-top"
                         sizes="(max-width: 768px) 100vw, 33vw"
                         quality={80}
                       />
