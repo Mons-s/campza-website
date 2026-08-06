@@ -53,7 +53,7 @@ export default function Home() {
           </div>
         </section>
 
-        <AppDemo />
+        <div className="hidden md:block"><AppDemo /></div>
 
         {/* Role cards */}
         <section className="py-24 px-8" style={{ background: "var(--light)" }}>
