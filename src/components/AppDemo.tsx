@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 const tabs = [
   { id: "dashboard",  label: "Dashboard",  icon: "🏠" },
@@ -299,11 +299,30 @@ const screenMap: Record<string, React.ReactNode> = {
   messages: <MessagesScreen />,
 };
 
+const TAB_IDS = tabs.map((t) => t.id);
+const INTERVAL_MS = 4000;
+
 export default function AppDemo() {
-  const [active, setActive] = useState("dashboard");
+  const [activeIdx, setActiveIdx] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const active = TAB_IDS[activeIdx];
+
+  useEffect(() => {
+    if (paused) return;
+    const timer = setInterval(() => {
+      setActiveIdx((i) => (i + 1) % TAB_IDS.length);
+    }, INTERVAL_MS);
+    return () => clearInterval(timer);
+  }, [paused]);
+
+  const selectTab = (id: string) => {
+    setActiveIdx(TAB_IDS.indexOf(id));
+    setPaused(true);
+  };
 
   return (
     <section className="py-24 px-8" style={{ background: "var(--navy)" }}>
+      <style>{`@keyframes progress { from { width: 0% } to { width: 100% } }`}</style>
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "rgba(90,122,232,0.8)" }}>See it in action</div>
@@ -311,7 +330,7 @@ export default function AppDemo() {
             A real look at the app
           </h2>
           <p className="text-sm mt-4 max-w-md mx-auto" style={{ color: "rgba(255,255,255,0.45)" }}>
-            Tap through the screens below. This is exactly what your staff, parents and students will see.
+            Screens cycle automatically. Click any tab to jump to it.
           </p>
         </div>
 
@@ -319,7 +338,7 @@ export default function AppDemo() {
           {/* Tab buttons */}
           <div className="flex lg:flex-col gap-2.5 flex-wrap justify-center lg:justify-start lg:pt-16">
             {tabs.map((t) => (
-              <button key={t.id} onClick={() => setActive(t.id)}
+              <button key={t.id} onClick={() => selectTab(t.id)}
                 style={{
                   display: "flex", alignItems: "center", gap: 10,
                   padding: "11px 18px", borderRadius: 14, border: "none", cursor: "pointer",
@@ -327,13 +346,22 @@ export default function AppDemo() {
                   outline: active === t.id ? "1.5px solid rgba(90,122,232,0.45)" : "1.5px solid transparent",
                   transition: "all 0.18s",
                   minWidth: 150,
+                  position: "relative",
+                  overflow: "hidden",
                 }}>
                 <span style={{ fontSize: 18 }}>{t.icon}</span>
                 <span style={{ fontSize: 13, fontWeight: active === t.id ? 700 : 500, color: active === t.id ? "#fff" : "rgba(255,255,255,0.45)" }}>
                   {t.label}
                 </span>
+                {active === t.id && !paused && (
+                  <span style={{
+                    position: "absolute", bottom: 0, left: 0, height: 2,
+                    background: "#5A7AE8", borderRadius: 2,
+                    animation: `progress ${INTERVAL_MS}ms linear`,
+                  }} />
+                )}
                 {active === t.id && (
-                  <span style={{ marginLeft: "auto", width: 6, height: 6, borderRadius: "50%", background: "#5A7AE8" }} />
+                  <span style={{ marginLeft: "auto", width: 6, height: 6, borderRadius: "50%", background: "#5A7AE8", flexShrink: 0 }} />
                 )}
               </button>
             ))}
