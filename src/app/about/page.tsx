@@ -65,13 +65,8 @@ export default function AboutPage() {
             </div>
 
             {/* Photo */}
-            <div className="my-12 grid grid-cols-2 gap-3 rounded-2xl overflow-hidden" style={{ height: 280 }}>
-              <div className="relative w-full h-full">
-                <Image src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&q=75" alt="School classroom" fill className="object-cover" sizes="50vw" />
-              </div>
-              <div className="relative w-full h-full">
-                <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&q=75" alt="Teacher with students" fill className="object-cover" sizes="50vw" />
-              </div>
+            <div className="my-12 rounded-2xl overflow-hidden relative w-full" style={{ height: 320 }}>
+              <Image src="/img-tochangethat.png" alt="CampZa was created to change that" fill className="object-contain object-center" sizes="100vw" quality={80} />
             </div>
 
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>

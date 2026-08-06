@@ -56,8 +56,8 @@ export default function Home() {
                 style={{ color: "var(--blue)" }}>See all 15+ features →</Link>
             </div>
             {/* Photo strip */}
-            <div className="relative w-full mb-10 rounded-2xl overflow-hidden" style={{ height: 200 }}>
-              <Image src="/img-whatitdoes.png" alt="What it does" fill className="object-cover object-top" sizes="100vw" quality={80} />
+            <div className="relative w-full mb-10 rounded-2xl overflow-hidden" style={{ height: 260 }}>
+              <Image src="/img-whatitdoes.png" alt="What it does" fill className="object-contain object-center" sizes="100vw" quality={80} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
