@@ -106,7 +106,7 @@ export default function ModulesPage() {
                         src={rolePhotos[role.label]}
                         alt={role.label}
                         fill
-                        className="object-cover"
+                        className="object-cover object-top"
                         sizes="(max-width: 768px) 100vw, 33vw"
                         quality={80}
                       />
