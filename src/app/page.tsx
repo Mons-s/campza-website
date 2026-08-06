@@ -56,16 +56,8 @@ export default function Home() {
                 style={{ color: "var(--blue)" }}>See all 15+ features →</Link>
             </div>
             {/* Photo strip */}
-            <div className="grid grid-cols-3 gap-3 mb-10 rounded-2xl overflow-hidden" style={{ height: 200 }}>
-              {[
-                { src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&q=75", alt: "Teacher with students" },
-                { src: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=500&auto=format&q=75", alt: "Students in classroom" },
-                { src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&auto=format&q=75", alt: "Student studying" },
-              ].map((img) => (
-                <div key={img.alt} className="relative w-full h-full">
-                  <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="33vw" />
-                </div>
-              ))}
+            <div className="relative w-full mb-10 rounded-2xl overflow-hidden" style={{ height: 200 }}>
+              <Image src="/img-whatitdoes.png" alt="What it does" fill className="object-cover object-top" sizes="100vw" quality={80} />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
