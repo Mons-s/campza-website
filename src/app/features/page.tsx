@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 const categoryPhotos: Record<string, string> = {
   Academics:      "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=700&auto=format&q=80",
   Finance:        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&auto=format&q=80",
-  Communication:  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&auto=format&q=80",
+  Communication:  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700&auto=format&q=80",
   Administration: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&auto=format&q=80",
 };
 
