@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 const rolePhotos: Record<string, string> = {
   Admin:   "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&q=80",
   Teacher: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&q=80",
-  Parent:  "https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=600&auto=format&q=80",
+  Parent:  "/img-parent.png",
   Student: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&auto=format&q=80",
 };
 
