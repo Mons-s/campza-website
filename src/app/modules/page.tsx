@@ -1,6 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const rolePhotos: Record<string, string> = {
+  Admin:   "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&auto=format&q=80",
+  Teacher: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&q=80",
+  Parent:  "https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=600&auto=format&q=80",
+  Student: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&auto=format&q=80",
+};
+
 const roles = [
   {
     icon: "🏫", label: "Admin", color: "#4338CA", bg: "#EEF2FF", border: "#C7D2FE",
@@ -80,7 +87,14 @@ export default function ModulesPage() {
               <div key={role.label}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-10">
                   <div className={`md:col-span-1 ${i % 2 === 1 ? "md:order-last" : ""}`}>
-                    <div className="w-14 h-14 rounded-2xl flex items-center justify-center text-2xl mb-4"
+                    <img
+                      src={rolePhotos[role.label]}
+                      alt={role.label}
+                      className="w-full rounded-2xl object-cover mb-5"
+                      style={{ height: 180 }}
+                      loading="lazy"
+                    />
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-3"
                       style={{ background: role.bg, border: `1px solid ${role.border}` }}>
                       {role.icon}
                     </div>

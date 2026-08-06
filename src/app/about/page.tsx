@@ -50,6 +50,12 @@ export default function AboutPage() {
               </p>
             </div>
 
+            {/* Photo */}
+            <div className="my-12 grid grid-cols-2 gap-3 rounded-2xl overflow-hidden" style={{ height: 280 }}>
+              <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&q=80" alt="School classroom" className="w-full h-full object-cover" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&q=80" alt="Teacher with students" className="w-full h-full object-cover" loading="lazy" />
+            </div>
+
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>
               We believe school management should be simple, connected, and intelligent. Technology should empower educators, not create more work. It should simplify everyday operations, strengthen communication, and provide school leaders with the clarity they need to make better decisions.
             </p>

@@ -29,7 +29,7 @@ export default function Home() {
         <Hero />
 
         {/* Feature highlights */}
-        <section className="py-24 px-8 bg-white">
+        <section className="pt-24 pb-0 px-8 bg-white">
           <div className="max-w-6xl mx-auto">
             <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
               <div>
@@ -41,6 +41,13 @@ export default function Home() {
               <Link href="/features" className="text-sm font-semibold no-underline flex-shrink-0"
                 style={{ color: "var(--blue)" }}>See all 15+ features →</Link>
             </div>
+            {/* Photo strip */}
+            <div className="grid grid-cols-3 gap-3 mb-10 rounded-2xl overflow-hidden" style={{ height: 200 }}>
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&q=80" alt="Teacher with students" className="w-full h-full object-cover" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=500&auto=format&q=80" alt="Students in classroom" className="w-full h-full object-cover" loading="lazy" />
+              <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&auto=format&q=80" alt="Student studying" className="w-full h-full object-cover" loading="lazy" />
+            </div>
+
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {highlights.map((f) => (
                 <div key={f.title} className="rounded-2xl p-6" style={{ background: "#F8FAFF", border: "1px solid #E4EAFF" }}>
@@ -96,19 +103,15 @@ export default function Home() {
                 Read our story →
               </Link>
             </div>
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                { icon: "⚡", t: "Real-time sync", d: "Data updates instantly across every device." },
-                { icon: "🔒", t: "Secure access",  d: "Role-based access so users see only what they need." },
-                { icon: "💳", t: "Online payments", d: "Digital fee collection with instant receipts." },
-                { icon: "🚀", t: "Zero setup cost", d: "Free to start. No hidden charges." },
-              ].map((b) => (
-                <div key={b.t} className="rounded-xl p-4" style={{ background: "var(--light)", border: "1px solid var(--border)" }}>
-                  <div className="text-xl mb-2">{b.icon}</div>
-                  <div className="text-sm font-bold mb-1" style={{ color: "var(--navy)" }}>{b.t}</div>
-                  <div className="text-xs leading-relaxed" style={{ color: "var(--muted)" }}>{b.d}</div>
-                </div>
-              ))}
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&auto=format&q=80"
+                alt="School classroom with students"
+                className="w-full rounded-2xl object-cover"
+                style={{ height: 340 }}
+                loading="lazy"
+              />
+              <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(to top, rgba(13,27,74,0.4) 0%, transparent 60%)" }} />
             </div>
           </div>
         </section>

@@ -1,6 +1,13 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+const categoryPhotos: Record<string, string> = {
+  Academics:      "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=700&auto=format&q=80",
+  Finance:        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&auto=format&q=80",
+  Communication:  "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=700&auto=format&q=80",
+  Administration: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&auto=format&q=80",
+};
+
 const categories = [
   {
     label: "Academics",
@@ -72,20 +79,33 @@ export default function FeaturesPage() {
         {/* Feature categories */}
         <div className="py-20 px-8 bg-white">
           <div className="max-w-6xl mx-auto flex flex-col gap-20">
-            {categories.map((cat) => (
+            {categories.map((cat, i) => (
               <div key={cat.label}>
-                <div className="flex items-center gap-3 mb-8">
-                  <div className="h-1 w-8 rounded-full" style={{ background: cat.color }} />
-                  <h2 className="text-xl font-black" style={{ color: cat.color }}>{cat.label}</h2>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {cat.features.map((f) => (
-                    <div key={f.name} className="rounded-2xl p-6" style={{ background: cat.bg, border: `1px solid ${cat.border}` }}>
-                      <div className="text-2xl mb-3">{f.icon}</div>
-                      <h3 className="text-sm font-bold mb-2" style={{ color: cat.color }}>{f.name}</h3>
-                      <p className="text-xs leading-relaxed" style={{ color: cat.color, opacity: 0.72 }}>{f.desc}</p>
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-8">
+                  <div className={`md:col-span-2 ${i % 2 === 1 ? "md:order-last" : ""}`}>
+                    <img
+                      src={categoryPhotos[cat.label]}
+                      alt={cat.label}
+                      className="w-full rounded-2xl object-cover"
+                      style={{ height: 220 }}
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="md:col-span-3">
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="h-1 w-8 rounded-full" style={{ background: cat.color }} />
+                      <h2 className="text-xl font-black" style={{ color: cat.color }}>{cat.label}</h2>
                     </div>
-                  ))}
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                      {cat.features.map((f) => (
+                        <div key={f.name} className="rounded-2xl p-5" style={{ background: cat.bg, border: `1px solid ${cat.border}` }}>
+                          <div className="text-2xl mb-2">{f.icon}</div>
+                          <h3 className="text-sm font-bold mb-1.5" style={{ color: cat.color }}>{f.name}</h3>
+                          <p className="text-xs leading-relaxed" style={{ color: cat.color, opacity: 0.72 }}>{f.desc}</p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </div>
             ))}
