@@ -2,15 +2,20 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "CampZa – School Management System",
-  description: "CampZa empowers schools through simplicity. Attendance, fees, marks, homework, timetables and parent communication in one app.",
-  keywords: "school management system, school management app, attendance management, fee collection, parent communication",
+  metadataBase: new URL("https://campza.in"),
+  title: {
+    default: "CampZa – School Management App",
+    template: "%s",
+  },
+  description: "CampZa is an all-in-one school management app covering attendance, fees, marks, homework, timetables and parent communication.",
+  keywords: ["school management system", "school management app", "attendance management", "fee collection app", "parent teacher communication", "school ERP"],
   openGraph: {
-    title: "CampZa – School Management System",
-    description: "Empowering schools through simplicity.",
-    url: "https://campza.in",
     siteName: "CampZa",
     type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
 };
 

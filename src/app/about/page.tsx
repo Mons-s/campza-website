@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "About – CampZa School Management System",
+  description: "CampZa was built to simplify school operations, empower educators and connect every part of a school. Learn about our vision and what drives us.",
+  alternates: { canonical: "https://campza.in/about" },
+  openGraph: {
+    title: "About CampZa – School Management, Reimagined",
+    description: "Built to simplify operations, empower educators and connect every part of your school. This is CampZa.",
+    url: "https://campza.in/about",
+    images: [{ url: "https://campza.in/og-image.png", width: 1200, height: 630 }],
+  },
+};
 
 const values = [
   { icon: "⚡", title: "Built on Firebase", desc: "Data syncs in real time across every device. Nothing waits for a page refresh." },

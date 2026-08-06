@@ -1,6 +1,19 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title: "Features – CampZa School Management App",
+  description: "Explore 15+ features built for schools: attendance tracking, fee collection, marks & results, homework management, parent-teacher chat, notices and more.",
+  alternates: { canonical: "https://campza.in/features" },
+  openGraph: {
+    title: "Features – CampZa School Management App",
+    description: "Attendance, fees, marks, homework, communication and administration — every feature your school needs in one app.",
+    url: "https://campza.in/features",
+    images: [{ url: "https://campza.in/og-image.png", width: 1200, height: 630 }],
+  },
+};
 
 const categoryPhotos: Record<string, string> = {
   Academics:      "/img-academics.png",
