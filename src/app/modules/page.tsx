@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const rolePhotos: Record<string, string> = {
   Admin:   "/img-admin.png",
@@ -87,13 +88,16 @@ export default function ModulesPage() {
               <div key={role.label}>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start mb-10">
                   <div className={`md:col-span-1 ${i % 2 === 1 ? "md:order-last" : ""}`}>
-                    <img
-                      src={rolePhotos[role.label]}
-                      alt={role.label}
-                      className="w-full rounded-2xl object-cover mb-5"
-                      style={{ height: 180 }}
-                      loading="lazy"
-                    />
+                    <div className="relative w-full rounded-2xl overflow-hidden mb-5" style={{ height: 180 }}>
+                      <Image
+                        src={rolePhotos[role.label]}
+                        alt={role.label}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        quality={80}
+                      />
+                    </div>
                     <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-3"
                       style={{ background: role.bg, border: `1px solid ${role.border}` }}>
                       {role.icon}

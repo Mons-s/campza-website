@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import AppDemo from "@/components/AppDemo";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const highlights = [
   { icon: "✅", title: "Attendance", desc: "Mark and track daily attendance for every class in seconds. Parents notified instantly." },
@@ -43,9 +44,15 @@ export default function Home() {
             </div>
             {/* Photo strip */}
             <div className="grid grid-cols-3 gap-3 mb-10 rounded-2xl overflow-hidden" style={{ height: 200 }}>
-              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&q=80" alt="Teacher with students" className="w-full h-full object-cover" loading="lazy" />
-              <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=500&auto=format&q=80" alt="Students in classroom" className="w-full h-full object-cover" loading="lazy" />
-              <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&auto=format&q=80" alt="Student studying" className="w-full h-full object-cover" loading="lazy" />
+              {[
+                { src: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=500&auto=format&q=75", alt: "Teacher with students" },
+                { src: "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=500&auto=format&q=75", alt: "Students in classroom" },
+                { src: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=500&auto=format&q=75", alt: "Student studying" },
+              ].map((img) => (
+                <div key={img.alt} className="relative w-full h-full">
+                  <Image src={img.src} alt={img.alt} fill className="object-cover" sizes="33vw" />
+                </div>
+              ))}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -103,15 +110,15 @@ export default function Home() {
                 Read our story →
               </Link>
             </div>
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&auto=format&q=80"
+            <div className="relative rounded-2xl overflow-hidden" style={{ height: 340 }}>
+              <Image
+                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&auto=format&q=75"
                 alt="School classroom with students"
-                className="w-full rounded-2xl object-cover"
-                style={{ height: 340 }}
-                loading="lazy"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 rounded-2xl" style={{ background: "linear-gradient(to top, rgba(13,27,74,0.4) 0%, transparent 60%)" }} />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(13,27,74,0.4) 0%, transparent 60%)" }} />
             </div>
           </div>
         </section>

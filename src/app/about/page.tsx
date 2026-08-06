@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const values = [
   { icon: "⚡", title: "Built on Firebase", desc: "Data syncs in real time across every device. Nothing waits for a page refresh." },
@@ -52,8 +53,12 @@ export default function AboutPage() {
 
             {/* Photo */}
             <div className="my-12 grid grid-cols-2 gap-3 rounded-2xl overflow-hidden" style={{ height: 280 }}>
-              <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&q=80" alt="School classroom" className="w-full h-full object-cover" loading="lazy" />
-              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&q=80" alt="Teacher with students" className="w-full h-full object-cover" loading="lazy" />
+              <div className="relative w-full h-full">
+                <Image src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&auto=format&q=75" alt="School classroom" fill className="object-cover" sizes="50vw" />
+              </div>
+              <div className="relative w-full h-full">
+                <Image src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&q=75" alt="Teacher with students" fill className="object-cover" sizes="50vw" />
+              </div>
             </div>
 
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>

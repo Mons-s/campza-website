@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const categoryPhotos: Record<string, string> = {
   Academics:      "/img-academics.png",
@@ -83,13 +84,16 @@ export default function FeaturesPage() {
               <div key={cat.label}>
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-8 items-start mb-8">
                   <div className={`md:col-span-2 ${i % 2 === 1 ? "md:order-last" : ""}`}>
-                    <img
-                      src={categoryPhotos[cat.label]}
-                      alt={cat.label}
-                      className="w-full rounded-2xl object-cover"
-                      style={{ height: 220 }}
-                      loading="lazy"
-                    />
+                    <div className="relative w-full rounded-2xl overflow-hidden" style={{ height: 220 }}>
+                      <Image
+                        src={categoryPhotos[cat.label]}
+                        alt={cat.label}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 40vw"
+                        quality={80}
+                      />
+                    </div>
                   </div>
                   <div className="md:col-span-3">
                     <div className="flex items-center gap-3 mb-6">
