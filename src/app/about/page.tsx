@@ -69,32 +69,32 @@ export default function AboutPage() {
         </section>
 
         {/* Vision */}
-        <section className="py-28 px-8" style={{ background: "var(--navy)" }}>
+        <section className="py-28 px-8" style={{ background: "#F0F4FF" }}>
           <div className="max-w-4xl mx-auto">
-            <div className="text-xs font-bold tracking-widest uppercase mb-5 text-center" style={{ color: "rgba(90,122,232,0.8)" }}>Our Vision</div>
-            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-white text-center mb-14 leading-tight" style={{ textWrap: "balance" }}>
+            <div className="text-xs font-bold tracking-widest uppercase mb-5 text-center" style={{ color: "var(--blue)" }}>Our Vision</div>
+            <h2 className="text-3xl md:text-5xl font-black tracking-tight text-center mb-14 leading-tight" style={{ color: "var(--navy)", textWrap: "balance" }}>
               We believe the future of education is connected.
             </h2>
 
-            <p className="text-lg leading-relaxed text-center mb-16" style={{ color: "rgba(255,255,255,0.55)" }}>
+            <p className="text-lg leading-relaxed text-center mb-16" style={{ color: "var(--muted)" }}>
               A future where every student is supported, every teacher is empowered, every parent is involved, and every school has the tools to operate with confidence and clarity.
             </p>
 
-            <div className="rounded-3xl p-10 md:p-14" style={{ background: "rgba(90,122,232,0.09)", border: "1px solid rgba(90,122,232,0.2)" }}>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.65)" }}>
+            <div className="rounded-3xl p-10 md:p-14" style={{ background: "#fff", border: "1px solid #E0E8FF" }}>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: "var(--muted)" }}>
                 That is why we are not building software for schools.
               </p>
-              <p className="text-lg leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.65)" }}>
+              <p className="text-lg leading-relaxed mb-6" style={{ color: "var(--muted)" }}>
                 We are building the digital foundation that helps schools educate, connect, and grow with confidence.
               </p>
-              <p className="text-lg leading-relaxed mb-10" style={{ color: "rgba(255,255,255,0.65)" }}>
+              <p className="text-lg leading-relaxed mb-10" style={{ color: "var(--muted)" }}>
                 Every feature we create, every improvement we make, and every decision we take is driven by one purpose — helping schools spend less time managing and more time making a difference. Because when schools thrive, teachers inspire, students succeed, and communities grow stronger.
               </p>
-              <div className="h-px mb-10" style={{ background: "rgba(90,122,232,0.2)" }} />
-              <p className="text-base mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
+              <div className="h-px mb-10" style={{ background: "#E0E8FF" }} />
+              <p className="text-base mb-4" style={{ color: "var(--muted)" }}>
                 This is more than school management.
               </p>
-              <p className="text-3xl md:text-4xl font-black text-white tracking-tight">This is CampZa.</p>
+              <p className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: "var(--navy)" }}>This is CampZa.</p>
             </div>
           </div>
         </section>
