@@ -2,9 +2,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 const categoryPhotos: Record<string, string> = {
-  Academics:      "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=700&auto=format&q=80",
+  Academics:      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&auto=format&q=80",
   Finance:        "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=700&auto=format&q=80",
-  Communication:  "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=700&auto=format&q=80",
+  Communication:  "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=700&auto=format&q=80",
   Administration: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=700&auto=format&q=80",
 };
 
