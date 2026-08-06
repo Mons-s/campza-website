@@ -4,12 +4,12 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "CampZa – School Management App for Attendance, Fees & Communication",
   description: "CampZa is an all-in-one school management app. Manage attendance, fees, marks, homework, timetables and parent communication from one place.",
-  alternates: { canonical: "https://campza.in" },
+  alternates: { canonical: "https://www.campza.in" },
   openGraph: {
     title: "CampZa – School Management App",
     description: "All-in-one school management: attendance, fees, marks, homework and parent communication in one app.",
-    url: "https://campza.in",
-    images: [{ url: "https://campza.in/og-image.png", width: 1200, height: 630 }],
+    url: "https://www.campza.in",
+    images: [{ url: "https://www.campza.in/og-image.png", width: 1200, height: 630 }],
   },
 };
 import Navbar from "@/components/Navbar";

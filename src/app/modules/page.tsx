@@ -6,12 +6,12 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Modules – CampZa for Admins, Teachers, Parents & Students",
   description: "CampZa gives every user their own view. Admins manage the whole school, teachers handle class work, parents track their child and students stay organised.",
-  alternates: { canonical: "https://campza.in/modules" },
+  alternates: { canonical: "https://www.campza.in/modules" },
   openGraph: {
     title: "Modules – CampZa for Admins, Teachers, Parents & Students",
     description: "One app, four dedicated views: Admin, Teacher, Parent and Student. Everyone sees exactly what they need.",
-    url: "https://campza.in/modules",
-    images: [{ url: "https://campza.in/og-image.png", width: 1200, height: 630 }],
+    url: "https://www.campza.in/modules",
+    images: [{ url: "https://www.campza.in/og-image.png", width: 1200, height: 630 }],
   },
 };
 
