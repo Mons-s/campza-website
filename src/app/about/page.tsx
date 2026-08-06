@@ -68,25 +68,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Values grid */}
-        <section className="py-24 px-8" style={{ background: "var(--light)" }}>
-          <div className="max-w-6xl mx-auto">
-            <div className="text-xs font-bold tracking-widest uppercase mb-3 text-center" style={{ color: "var(--blue)" }}>What we stand for</div>
-            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-14" style={{ color: "var(--navy)" }}>
-              Built differently, on purpose
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              {values.map((v) => (
-                <div key={v.title} className="rounded-2xl p-7 bg-white" style={{ border: "1px solid var(--border)" }}>
-                  <div className="text-3xl mb-4">{v.icon}</div>
-                  <h3 className="text-base font-bold mb-2" style={{ color: "var(--navy)" }}>{v.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "var(--muted)" }}>{v.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Vision */}
         <section className="py-28 px-8" style={{ background: "var(--navy)" }}>
           <div className="max-w-4xl mx-auto">
@@ -109,13 +90,30 @@ export default function AboutPage() {
               <p className="text-lg leading-relaxed mb-10" style={{ color: "rgba(255,255,255,0.65)" }}>
                 Every feature we create, every improvement we make, and every decision we take is driven by one purpose — helping schools spend less time managing and more time making a difference. Because when schools thrive, teachers inspire, students succeed, and communities grow stronger.
               </p>
-
               <div className="h-px mb-10" style={{ background: "rgba(90,122,232,0.2)" }} />
-
               <p className="text-base mb-4" style={{ color: "rgba(255,255,255,0.4)" }}>
                 This is more than school management.
               </p>
               <p className="text-3xl md:text-4xl font-black text-white tracking-tight">This is CampZa.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Values grid */}
+        <section className="py-24 px-8" style={{ background: "var(--light)" }}>
+          <div className="max-w-6xl mx-auto">
+            <div className="text-xs font-bold tracking-widest uppercase mb-3 text-center" style={{ color: "var(--blue)" }}>What we stand for</div>
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-14" style={{ color: "var(--navy)" }}>
+              Built differently, on purpose
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {values.map((v) => (
+                <div key={v.title} className="rounded-2xl p-7 bg-white" style={{ border: "1px solid var(--border)" }}>
+                  <div className="text-3xl mb-4">{v.icon}</div>
+                  <h3 className="text-base font-bold mb-2" style={{ color: "var(--navy)" }}>{v.title}</h3>
+                  <p className="text-sm leading-relaxed" style={{ color: "var(--muted)" }}>{v.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
