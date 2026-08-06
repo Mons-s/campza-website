@@ -12,6 +12,81 @@ const CARD_DATA = [
 
 const ORBIT_R = 195;
 
+function MobileHero() {
+  const [idx, setIdx] = useState(0);
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisible(false);
+      setTimeout(() => {
+        setIdx((i) => (i + 1) % CARD_DATA.length);
+        setVisible(true);
+      }, 350);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, []);
+
+  const c = CARD_DATA[idx];
+
+  return (
+    <div className="flex flex-col items-center gap-6 md:hidden">
+      <style>{`
+        @keyframes floatIcon { 0%,100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+        @keyframes cardFadeIn { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
+        @keyframes pulse-ring { 0% { transform:scale(1); opacity:0.4; } 100% { transform:scale(1.5); opacity:0; } }
+      `}</style>
+
+      {/* Floating icon with pulse ring */}
+      <div className="relative flex items-center justify-center">
+        <div className="absolute rounded-full pointer-events-none"
+          style={{ width: 96, height: 96, background: "rgba(90,122,232,0.15)", animation: "pulse-ring 2s ease-out infinite" }} />
+        <div className="flex items-center justify-center rounded-[28px]" style={{
+          width: 96, height: 96,
+          background: "linear-gradient(145deg, #1c2d6b 0%, #0C1128 100%)",
+          boxShadow: "0 0 0 1px rgba(90,122,232,0.3), 0 0 40px rgba(90,122,232,0.2), 0 16px 32px rgba(0,0,0,0.6)",
+          animation: "floatIcon 3s ease-in-out infinite",
+        }}>
+          <Logo size={54} />
+        </div>
+      </div>
+
+      {/* Dot indicators */}
+      <div style={{ display: "flex", gap: 6 }}>
+        {CARD_DATA.map((_, i) => (
+          <div key={i} style={{
+            width: i === idx ? 18 : 6, height: 6, borderRadius: 3,
+            background: i === idx ? "#5A7AE8" : "rgba(255,255,255,0.2)",
+            transition: "all 0.3s",
+          }} />
+        ))}
+      </div>
+
+      {/* Cycling card */}
+      <div className="w-full max-w-xs">
+        {visible && (
+          <div key={idx}
+            className="flex items-center gap-3 px-4 py-3.5 rounded-2xl text-white w-full"
+            style={{
+              background: "rgba(14,20,50,0.92)",
+              border: `1px solid ${c.color}44`,
+              boxShadow: `0 8px 24px rgba(0,0,0,0.4), 0 0 0 1px ${c.color}22`,
+              animation: "cardFadeIn 0.35s ease-out",
+            }}>
+            <span className="w-10 h-10 rounded-xl flex items-center justify-center text-xl flex-shrink-0"
+              style={{ background: `${c.color}22` }}>{c.icon}</span>
+            <div>
+              <div className="text-sm font-semibold leading-none mb-1">{c.label}</div>
+              <div className="text-xs leading-none" style={{ color: "rgba(255,255,255,0.45)" }}>{c.sub}</div>
+            </div>
+            <div className="ml-auto w-2 h-2 rounded-full flex-shrink-0" style={{ background: c.color, boxShadow: `0 0 6px ${c.color}` }} />
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
 export default function Hero() {
   const [deg, setDeg] = useState(0);
 
@@ -81,35 +156,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile: center icon + card grid */}
-        <div className="flex flex-col items-center gap-6 md:hidden">
-          <div className="flex items-center justify-center rounded-[28px]"
-            style={{
-              width: 96, height: 96,
-              background: "linear-gradient(145deg, #1c2d6b 0%, #0C1128 100%)",
-              boxShadow: "0 0 0 1px rgba(90,122,232,0.3), 0 0 40px rgba(90,122,232,0.2), 0 16px 32px rgba(0,0,0,0.6)",
-            }}>
-            <Logo size={54} />
-          </div>
-          <div className="grid grid-cols-2 gap-2.5 w-full max-w-sm">
-            {CARD_DATA.map((c) => (
-              <div key={c.label}
-                className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-white"
-                style={{
-                  background: "rgba(14,20,50,0.92)",
-                  border: "1px solid rgba(90,122,232,0.2)",
-                  boxShadow: "0 4px 16px rgba(0,0,0,0.35)",
-                }}>
-                <span className="w-7 h-7 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
-                  style={{ background: `${c.color}22` }}>{c.icon}</span>
-                <div>
-                  <div className="text-[10px] font-semibold leading-none mb-0.5">{c.label}</div>
-                  <div className="text-[9px] leading-none" style={{ color: "rgba(255,255,255,0.4)" }}>{c.sub}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Mobile: center icon + cycling card */}
+        <MobileHero />
 
         {/* Desktop: orbit graphic */}
         <div className="hidden md:flex justify-center items-center relative" style={{ height: 500 }}>
