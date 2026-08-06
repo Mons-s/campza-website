@@ -20,12 +20,6 @@ const roles = [
   { icon: "🎒", label: "Student", color: "#86198F", bg: "#FDF2F8", border: "#F5D0FE22", desc: "Timetable, homework, results and notices, all in one place." },
 ];
 
-const stats = [
-  { n: "15+", l: "Features" },
-  { n: "4",   l: "User roles" },
-  { n: "₹0",  l: "Setup cost" },
-  { n: "24h", l: "Onboarding" },
-];
 
 export default function Home() {
   return (
@@ -33,18 +27,6 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-
-        {/* Stats bar */}
-        <div className="py-10 px-8" style={{ background: "#F0F4FF", borderBottom: "1px solid #E0E8FF" }}>
-          <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6">
-            {stats.map((s) => (
-              <div key={s.l} className="text-center">
-                <div className="text-3xl font-black tracking-tight" style={{ color: "var(--navy)" }}>{s.n}</div>
-                <div className="text-xs mt-1 font-medium" style={{ color: "var(--muted)" }}>{s.l}</div>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Feature highlights */}
         <section className="py-24 px-8 bg-white">
