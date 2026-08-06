@@ -46,7 +46,7 @@ export default function Footer() {
           <div>
             <div className="text-xs font-bold uppercase tracking-widest mb-4" style={{ color: "rgba(255,255,255,0.2)" }}>Legal</div>
             <a href="/privacy" className="block text-sm mb-3 no-underline hover:underline" style={{ color: "rgba(255,255,255,0.45)" }}>Privacy Policy</a>
-            <a href="/security" className="block text-sm mb-3 no-underline hover:underline" style={{ color: "rgba(255,255,255,0.45)" }}>Security</a>
+            <a href="/terms" className="block text-sm mb-3 no-underline hover:underline" style={{ color: "rgba(255,255,255,0.45)" }}>Terms of Service</a>
             <a href="mailto:campza.in@outlook.com" className="block text-sm no-underline hover:underline" style={{ color: "var(--blue)" }}>campza.in@outlook.com</a>
           </div>
         </div>
