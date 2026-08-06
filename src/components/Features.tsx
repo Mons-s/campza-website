@@ -1,7 +1,7 @@
 const features = [
   { icon: "✅", bg: "#EEF2FF", title: "Attendance", desc: "Teachers mark it in seconds. Parents see it the same moment. No more calling the school to find out if your child turned up." },
   { icon: "📊", bg: "#F0FDF4", title: "Marks & Results", desc: "Enter subject-wise marks after each exam. Totals and grades calculate automatically. Students and parents see results the same day." },
-  { icon: "₹", bg: "#FFF7ED", title: "Fee Collection", desc: "Set up fee terms, track who has paid and who hasn't, and let parents pay online via Razorpay. No cash queues at the office." },
+  { icon: "💳", bg: "#FFF7ED", title: "Fee Collection", desc: "Set up fee terms, track who has paid and who hasn't, and let parents pay online. No cash queues at the office." },
   { icon: "📚", bg: "#FDF2F8", title: "Homework", desc: "Teachers post homework by subject and due date. Students and parents see it straight away — no WhatsApp group needed." },
   { icon: "📅", bg: "#F0F9FF", title: "Timetable", desc: "Build your class schedule once. Teachers, students and parents can view it from any device, whenever they need to." },
   { icon: "📢", bg: "#FEF9EE", title: "Notice Board", desc: "Send announcements to the whole school or just one class. Push notifications make sure nothing gets buried." },

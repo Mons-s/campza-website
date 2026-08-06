@@ -21,7 +21,7 @@ const categories = [
     bg: "#F0FDF4",
     border: "#BBF7D0",
     features: [
-      { icon: "💳", name: "Fee Collection", desc: "Set up custom fee structures per class. Parents pay online via Razorpay — UPI, cards, net banking all supported. Instant receipts generated." },
+      { icon: "💳", name: "Fee Collection", desc: "Set up custom fee structures per class. Parents pay online — cards, net banking and more supported. Instant digital receipts generated." },
       { icon: "🧾", name: "Fee Receipts", desc: "Every payment generates a digital receipt stored in the system. Parents can download them anytime from their phone." },
       { icon: "📉", name: "Outstanding Dues", desc: "Track which students have pending fees. Send reminders via app notifications without any manual effort." },
     ],

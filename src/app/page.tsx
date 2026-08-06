@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const highlights = [
   { icon: "✅", title: "Attendance", desc: "Mark and track daily attendance for every class in seconds. Parents notified instantly." },
   { icon: "📊", title: "Marks & Results", desc: "Enter exam scores, auto-calculate grades and rankings, share results with parents." },
-  { icon: "💳", title: "Fee Collection", desc: "Collect fees online via Razorpay. Auto-generate receipts, track dues automatically." },
+  { icon: "💳", title: "Fee Collection", desc: "Collect fees online. Auto-generate receipts, track dues and send reminders automatically." },
   { icon: "📚", title: "Homework", desc: "Post assignments with due dates. Students and parents see them immediately." },
   { icon: "💬", title: "Parent-Teacher Chat", desc: "Direct messaging inside the app — no personal numbers shared." },
   { icon: "📢", title: "Notice Board", desc: "Send school-wide or class-specific announcements with push notifications." },
@@ -102,10 +102,10 @@ export default function Home() {
             <div>
               <div className="text-xs font-bold tracking-widest uppercase mb-2.5" style={{ color: "var(--blue)" }}>Why CampZa</div>
               <h2 className="text-3xl font-black tracking-tight mb-5" style={{ color: "var(--navy)", textWrap: "balance" }}>
-                Built for Indian schools. Not adapted for them.
+                Built for schools. Not adapted for them.
               </h2>
               <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--muted)" }}>
-                Most school software is built abroad and adjusted to fit India. CampZa was built from the ground up for Indian academic workflows, Indian payment methods, and Indian schools of every size.
+                Most school software is a generic platform bolted onto education. CampZa was built from the ground up around how schools actually operate — every workflow, every role, every daily task.
               </p>
               <Link href="/about" className="text-sm font-semibold no-underline" style={{ color: "var(--blue)" }}>
                 Read our story →
@@ -115,7 +115,7 @@ export default function Home() {
               {[
                 { icon: "⚡", t: "Real-time sync", d: "Data updates instantly across every device." },
                 { icon: "🔒", t: "Secure access",  d: "Role-based — users see only what they need." },
-                { icon: "🏫", t: "Made for India", d: "Razorpay, ₹ currency, Indian calendars." },
+                { icon: "💳", t: "Online payments", d: "Digital fee collection with instant receipts." },
                 { icon: "🚀", t: "Zero setup cost", d: "Free to start. No hidden charges." },
               ].map((b) => (
                 <div key={b.t} className="rounded-xl p-4" style={{ background: "var(--light)", border: "1px solid var(--border)" }}>

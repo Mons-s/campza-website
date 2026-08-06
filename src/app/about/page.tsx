@@ -5,7 +5,7 @@ const values = [
   { icon: "⚡", title: "Built on Firebase", desc: "Data syncs in real time across every device. Nothing waits for a page refresh." },
   { icon: "📱", title: "Works on any device", desc: "Android phone, tablet, or a laptop browser. No installation required on web." },
   { icon: "🔒", title: "Secure by default", desc: "Role-based access means every user sees only what they need to. Student data stays private." },
-  { icon: "🏫", title: "Built for India", desc: "Razorpay payments, ₹ currency, Indian academic calendars — not a foreign product adapted for India." },
+  { icon: "💳", title: "Online payments", desc: "Collect fees digitally — parents pay from their phone and get instant receipts, no office visits needed." },
   { icon: "🚀", title: "Zero setup cost", desc: "No upfront fees, no long-term contracts, no hidden charges. Your school is live in one afternoon." },
   { icon: "🎯", title: "No feature bloat", desc: "Every feature in CampZa solves a real daily problem. Nothing is added just to look impressive on a list." },
 ];
@@ -23,7 +23,7 @@ export default function AboutPage() {
               We started because schools have evolved — their software should too.
             </h1>
             <p className="text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
-              Walk into most schools and you will still find attendance registers, fee receipt books, and WhatsApp groups doing the work that proper software should handle.
+              Walk into most schools and you will still find attendance registers, fee receipt books, and group chats doing the work that proper software should handle.
             </p>
           </div>
         </div>
@@ -41,7 +41,7 @@ export default function AboutPage() {
               Parents get visibility. Teachers get time back. Admins get clarity. And students get a school that feels a little more organised.
             </p>
             <p className="text-base leading-relaxed" style={{ color: "var(--muted)" }}>
-              CampZa is an Indian product, built for Indian schools, with Indian payment methods, Indian academic workflows, and Indian school calendars — not a foreign ERP adapted to fit.
+              CampZa is built for schools of every size — from small neighbourhood schools to large multi-branch institutions. One app, every role, every workflow covered.
             </p>
           </div>
         </section>

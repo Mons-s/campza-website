@@ -38,7 +38,7 @@ const roles = [
       { icon: "✅", name: "Attendance", desc: "See your child's daily attendance in real time. Get notified if they're marked absent." },
       { icon: "📊", name: "Marks", desc: "View exam results as soon as the teacher publishes them. Track progress across terms." },
       { icon: "📚", name: "Homework", desc: "See all pending homework by subject. Never miss a deadline again." },
-      { icon: "💳", name: "Pay Fees", desc: "Pay school fees from your phone via Razorpay. Get instant receipts. No trips to the school office." },
+      { icon: "💳", name: "Pay Fees", desc: "Pay school fees from your phone. Get instant digital receipts. No trips to the school office." },
       { icon: "💬", name: "Teacher Chat", desc: "Message your child's teacher directly and privately inside the app." },
       { icon: "🚌", name: "Bus Info", desc: "See your child's bus route, stop timings and driver contact details." },
     ],

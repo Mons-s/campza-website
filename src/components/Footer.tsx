@@ -11,7 +11,7 @@ export default function Footer() {
             <span className="text-lg font-black text-white">Camp<span style={{ color: "#E83030" }}>Za</span></span>
           </div>
           <p className="text-xs leading-relaxed mb-4" style={{ color: "rgba(255,255,255,0.3)" }}>
-            School management software built for Indian schools. Simple, affordable, and live in a day.
+            School management software built for schools everywhere. Simple, affordable, and live in a day.
           </p>
           <p className="text-xs tracking-widest uppercase" style={{ color: "rgba(255,255,255,0.15)", letterSpacing: "2px" }}>
             CREATE · INSPIRE · SUCCEED

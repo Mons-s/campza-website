@@ -44,7 +44,7 @@ export default function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 mb-7 text-xs font-semibold tracking-wide"
             style={{ background: "rgba(90,122,232,0.1)", border: "1px solid rgba(90,122,232,0.25)", color: "#8fa8f0" }}>
-            <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" /> Live · Built for Indian schools
+            <span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block" /> Live · Built for schools
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-[3.75rem] font-black leading-[1.05] tracking-tight text-white mb-5"
             style={{ textWrap: "balance" }}>
