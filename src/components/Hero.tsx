@@ -81,7 +81,37 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right: orbit graphic */}
+        {/* Mobile: center icon + card grid */}
+        <div className="flex flex-col items-center gap-6 md:hidden">
+          <div className="flex items-center justify-center rounded-[28px]"
+            style={{
+              width: 96, height: 96,
+              background: "linear-gradient(145deg, #1c2d6b 0%, #0C1128 100%)",
+              boxShadow: "0 0 0 1px rgba(90,122,232,0.3), 0 0 40px rgba(90,122,232,0.2), 0 16px 32px rgba(0,0,0,0.6)",
+            }}>
+            <Logo size={54} />
+          </div>
+          <div className="grid grid-cols-2 gap-2.5 w-full max-w-sm">
+            {CARD_DATA.map((c) => (
+              <div key={c.label}
+                className="flex items-center gap-2 px-3 py-2.5 rounded-xl text-white"
+                style={{
+                  background: "rgba(14,20,50,0.92)",
+                  border: "1px solid rgba(90,122,232,0.2)",
+                  boxShadow: "0 4px 16px rgba(0,0,0,0.35)",
+                }}>
+                <span className="w-7 h-7 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
+                  style={{ background: `${c.color}22` }}>{c.icon}</span>
+                <div>
+                  <div className="text-[10px] font-semibold leading-none mb-0.5">{c.label}</div>
+                  <div className="text-[9px] leading-none" style={{ color: "rgba(255,255,255,0.4)" }}>{c.sub}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Desktop: orbit graphic */}
         <div className="hidden md:flex justify-center items-center relative" style={{ height: 500 }}>
 
           {/* static orbit ring */}
