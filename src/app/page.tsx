@@ -120,7 +120,7 @@ export default function Home() {
                 src="/img-why.png"
                 alt="Why CampZa"
                 fill
-                className="object-cover object-top"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 50vw"
                 quality={80}
               />
