@@ -117,11 +117,12 @@ export default function Home() {
             </div>
             <div className="relative rounded-2xl overflow-hidden" style={{ height: 340 }}>
               <Image
-                src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=700&auto=format&q=75"
-                alt="School classroom with students"
+                src="/img-why.png"
+                alt="Why CampZa"
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                quality={80}
               />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(13,27,74,0.4) 0%, transparent 60%)" }} />
             </div>
