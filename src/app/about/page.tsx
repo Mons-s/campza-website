@@ -20,7 +20,7 @@ export default function AboutPage() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "rgba(90,122,232,0.8)" }}>About CampZa</div>
             <h1 className="text-4xl md:text-5xl font-black tracking-tight text-white mb-6" style={{ textWrap: "balance" }}>
-              We started because school admin was still living in 2005
+              We started because schools have evolved — their software should too.
             </h1>
             <p className="text-base leading-relaxed" style={{ color: "rgba(255,255,255,0.5)" }}>
               Walk into most schools and you will still find attendance registers, fee receipt books, and WhatsApp groups doing the work that proper software should handle.
