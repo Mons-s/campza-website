@@ -66,7 +66,7 @@ export default function Hero() {
               Request a Demo
             </a>
           </div>
-          <div className="flex gap-8 flex-wrap">
+          <div className="grid grid-cols-2 md:flex gap-6 md:gap-8">
             {[
               { n: "4",   l: "User roles"    },
               { n: "15+", l: "Modules"       },
