@@ -9,15 +9,15 @@ const highlights = [
   { icon: "📊", title: "Marks & Results", desc: "Enter exam scores, auto-calculate grades and rankings, share results with parents." },
   { icon: "💳", title: "Fee Collection", desc: "Collect fees online. Auto-generate receipts, track dues and send reminders automatically." },
   { icon: "📚", title: "Homework", desc: "Post assignments with due dates. Students and parents see them immediately." },
-  { icon: "💬", title: "Parent-Teacher Chat", desc: "Direct messaging inside the app — no personal numbers shared." },
+  { icon: "💬", title: "Parent-Teacher Chat", desc: "Direct messaging inside the app, with no personal numbers shared." },
   { icon: "📢", title: "Notice Board", desc: "Send school-wide or class-specific announcements with push notifications." },
 ];
 
 const roles = [
-  { icon: "🏫", label: "Admin",   color: "#4338CA", bg: "#EEF2FF", border: "#C7D2FE22", desc: "Full school overview — students, staff, fees, reports, admissions." },
-  { icon: "👩‍🏫", label: "Teacher", color: "#15803D", bg: "#F0FDF4", border: "#BBF7D022", desc: "Attendance, marks, homework — without the paperwork." },
+  { icon: "🏫", label: "Admin",   color: "#4338CA", bg: "#EEF2FF", border: "#C7D2FE22", desc: "Full school overview: students, staff, fees, reports and admissions." },
+  { icon: "👩‍🏫", label: "Teacher", color: "#15803D", bg: "#F0FDF4", border: "#BBF7D022", desc: "Attendance, marks and homework, without the paperwork." },
   { icon: "👨‍👩‍👧", label: "Parent",  color: "#C2410C", bg: "#FFF7ED", border: "#FED7AA22", desc: "Real-time updates on your child's attendance, marks and fees." },
-  { icon: "🎒", label: "Student", color: "#86198F", bg: "#FDF2F8", border: "#F5D0FE22", desc: "Timetable, homework, results and notices — all in one place." },
+  { icon: "🎒", label: "Student", color: "#86198F", bg: "#FDF2F8", border: "#F5D0FE22", desc: "Timetable, homework, results and notices, all in one place." },
 ];
 
 const stats = [
@@ -108,7 +108,7 @@ export default function Home() {
                 Built for schools. Not adapted for them.
               </h2>
               <p className="text-sm leading-relaxed mb-4" style={{ color: "var(--muted)" }}>
-                Most school software is a generic platform bolted onto education. CampZa was built from the ground up around how schools actually operate — every workflow, every role, every daily task.
+                Most school software is a generic platform bolted onto education. CampZa was built from the ground up around how schools actually operate, covering every workflow, every role and every daily task.
               </p>
               <Link href="/about" className="text-sm font-semibold no-underline" style={{ color: "var(--blue)" }}>
                 Read our story →
@@ -117,7 +117,7 @@ export default function Home() {
             <div className="grid grid-cols-2 gap-4">
               {[
                 { icon: "⚡", t: "Real-time sync", d: "Data updates instantly across every device." },
-                { icon: "🔒", t: "Secure access",  d: "Role-based — users see only what they need." },
+                { icon: "🔒", t: "Secure access",  d: "Role-based access so users see only what they need." },
                 { icon: "💳", t: "Online payments", d: "Digital fee collection with instant receipts." },
                 { icon: "🚀", t: "Zero setup cost", d: "Free to start. No hidden charges." },
               ].map((b) => (

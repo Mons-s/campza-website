@@ -5,7 +5,7 @@ const values = [
   { icon: "⚡", title: "Built on Firebase", desc: "Data syncs in real time across every device. Nothing waits for a page refresh." },
   { icon: "📱", title: "Works on any device", desc: "Android phone, tablet, or a laptop browser. No installation required on web." },
   { icon: "🔒", title: "Secure by default", desc: "Role-based access means every user sees only what they need to. Student data stays private." },
-  { icon: "💳", title: "Online payments", desc: "Collect fees digitally — parents pay from their phone and get instant receipts, no office visits needed." },
+  { icon: "💳", title: "Online payments", desc: "Collect fees digitally. Parents pay from their phone and get instant receipts, with no office visits needed." },
   { icon: "🚀", title: "Zero setup cost", desc: "No upfront fees, no long-term contracts, no hidden charges. Your school is live in one afternoon." },
   { icon: "🎯", title: "No feature bloat", desc: "Every feature in CampZa solves a real daily problem. Nothing is added just to look impressive on a list." },
 ];
@@ -40,7 +40,7 @@ export default function AboutPage() {
             <div className="h-px mb-12" style={{ background: "var(--border)" }} />
 
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>
-              For too long, schools have relied on disconnected systems, manual paperwork, spreadsheets, and outdated processes that create unnecessary complexity. Valuable time is spent chasing information, repeating administrative tasks, and switching between multiple tools instead of focusing on what truly matters — delivering an exceptional education.
+              For too long, schools have relied on disconnected systems, manual paperwork, spreadsheets, and outdated processes that create unnecessary complexity. Valuable time is spent chasing information, repeating administrative tasks, and switching between multiple tools instead of focusing on what truly matters: delivering an exceptional education.
             </p>
 
             {/* Pull quote */}
@@ -55,7 +55,7 @@ export default function AboutPage() {
             </p>
 
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>
-              Every feature in CampZa is designed to solve a real challenge faced by schools. From admissions and enrolment to attendance, academics, examinations, fee management, transport, communication, staff administration, finance, and parent engagement — every module works together as one connected platform. Information flows seamlessly across departments, routine tasks are automated, and every stakeholder has access to the information they need, exactly when they need it.
+              Every feature in CampZa is designed to solve a real challenge faced by schools. From admissions and enrolment to attendance, academics, examinations, fee management, transport, communication, staff administration, finance and parent engagement. Every module works together as one connected platform. Information flows seamlessly across departments, routine tasks are automated, and every stakeholder has access to the information they need, exactly when they need it.
             </p>
 
             <p className="text-base leading-loose mb-8" style={{ color: "var(--muted)", fontSize: "1.0625rem" }}>
@@ -88,7 +88,7 @@ export default function AboutPage() {
                 We are building the digital foundation that helps schools educate, connect, and grow with confidence.
               </p>
               <p className="text-lg leading-relaxed mb-10" style={{ color: "var(--muted)" }}>
-                Every feature we create, every improvement we make, and every decision we take is driven by one purpose — helping schools spend less time managing and more time making a difference. Because when schools thrive, teachers inspire, students succeed, and communities grow stronger.
+                Every feature we create, every improvement we make, and every decision we take is driven by one purpose: helping schools spend less time managing and more time making a difference. Because when schools thrive, teachers inspire, students succeed, and communities grow stronger.
               </p>
               <div className="h-px mb-10" style={{ background: "#E0E8FF" }} />
               <p className="text-base mb-4" style={{ color: "var(--muted)" }}>
@@ -124,7 +124,7 @@ export default function AboutPage() {
             Ready to modernise your school?
           </h2>
           <p className="text-base mb-10 max-w-md mx-auto" style={{ color: "var(--muted)" }}>
-            Get in touch and we'll walk you through the app and get you set up — at no cost.
+            Get in touch and we'll walk you through the app and get you set up, at no cost.
           </p>
           <a href="/contact"
             className="inline-flex items-center gap-2 px-8 py-4 rounded-xl text-base font-bold text-white no-underline transition-all hover:-translate-y-0.5"

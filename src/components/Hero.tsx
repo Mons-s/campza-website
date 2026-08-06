@@ -52,7 +52,7 @@ export default function Hero() {
             <span style={{ color: "var(--blue)" }}>through simplicity.</span>
           </h1>
           <p className="text-base leading-relaxed mb-9 max-w-md" style={{ color: "rgba(255,255,255,0.5)" }}>
-            Attendance, marks, fees, homework, timetables, parent chat — all in one app your staff can learn in ten minutes.
+            Attendance, marks, fees, homework, timetables and parent chat, all in one app your staff can learn in ten minutes.
           </p>
           <div className="flex gap-3 flex-wrap mb-12">
             <a href="https://app.campza.in" target="_blank" rel="noopener noreferrer"

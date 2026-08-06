@@ -7,7 +7,7 @@ export default function About() {
             { icon: "⚡", title: "Built on Firebase", desc: "Data syncs in real time across every device. Nothing waits for a page refresh." },
             { icon: "📱", title: "Works on any device", desc: "Android phone, tablet, or browser on a laptop. No installation required on web." },
             { icon: "🔒", title: "Secure by default", desc: "Role-based access means every user sees only what they need to. Student data stays private." },
-            { icon: "💳", title: "Online fee payments", desc: "Parents pay fees digitally from their phone and get instant receipts — no cash queues, no office visits." },
+            { icon: "💳", title: "Online fee payments", desc: "Parents pay fees digitally from their phone and get instant receipts, with no cash queues or office visits." },
           ].map((b) => (
             <div key={b.title} className="flex items-start gap-4">
               <div className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"

@@ -21,7 +21,7 @@ const categories = [
     bg: "#F0FDF4",
     border: "#BBF7D0",
     features: [
-      { icon: "💳", name: "Fee Collection", desc: "Set up custom fee structures per class. Parents pay online — cards, net banking and more supported. Instant digital receipts generated." },
+      { icon: "💳", name: "Fee Collection", desc: "Set up custom fee structures per class. Parents pay online using cards, net banking and more. Instant digital receipts generated." },
       { icon: "🧾", name: "Fee Receipts", desc: "Every payment generates a digital receipt stored in the system. Parents can download them anytime from their phone." },
       { icon: "📉", name: "Outstanding Dues", desc: "Track which students have pending fees. Send reminders via app notifications without any manual effort." },
     ],
@@ -34,7 +34,7 @@ const categories = [
     features: [
       { icon: "📢", name: "Notice Board", desc: "Post notices school-wide or to specific classes. All users get an instant push notification. Old notices remain searchable." },
       { icon: "💬", name: "Parent-Teacher Chat", desc: "Direct messaging between teachers and parents inside the app. No phone numbers exchanged. Full history saved." },
-      { icon: "🔔", name: "Push Notifications", desc: "Any important update — attendance, fees, notices — triggers an instant notification to the right person automatically." },
+      { icon: "🔔", name: "Push Notifications", desc: "Any important update about attendance, fees or notices triggers an instant notification to the right person automatically." },
     ],
   },
   {
@@ -65,7 +65,7 @@ export default function FeaturesPage() {
             15+ features built for<br />how schools actually work
           </h1>
           <p className="text-base max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.5)" }}>
-            Every feature solves a real daily problem — not something added to look good on a spec sheet.
+            Every feature solves a real daily problem, not something added to look good on a spec sheet.
           </p>
         </div>
 

@@ -5,7 +5,7 @@ const roles = [
   {
     icon: "🏫", label: "Admin", color: "#4338CA", bg: "#EEF2FF", border: "#C7D2FE",
     tagline: "The full picture of the school, always at hand.",
-    desc: "The admin gets a complete birds-eye view — every student, every teacher, every rupee. Manage the entire school from one login.",
+    desc: "The admin gets a complete birds-eye view of every student, teacher and transaction. Manage the entire school from one login.",
     modules: [
       { icon: "👨‍🎓", name: "Student Management", desc: "Add, edit and organise students by class. Manage profiles, admission numbers and parent details." },
       { icon: "👩‍🏫", name: "Staff Management", desc: "Manage teacher profiles, assign subjects and classes, track leave and performance." },
@@ -20,7 +20,7 @@ const roles = [
   {
     icon: "👩‍🏫", label: "Teacher", color: "#15803D", bg: "#F0FDF4", border: "#BBF7D0",
     tagline: "Less admin work, more time for teaching.",
-    desc: "Teachers handle everything from attendance to marks and parent messages — without leaving the app or touching paper.",
+    desc: "Teachers handle everything from attendance to marks and parent messages, without leaving the app or touching paper.",
     modules: [
       { icon: "✅", name: "Attendance", desc: "Mark daily attendance for your class in under a minute. Students and parents see it instantly." },
       { icon: "📝", name: "Enter Marks", desc: "Enter exam marks subject-wise. Grades and rankings calculate automatically." },
@@ -33,7 +33,7 @@ const roles = [
   {
     icon: "👨‍👩‍👧", label: "Parent", color: "#C2410C", bg: "#FFF7ED", border: "#FED7AA",
     tagline: "Know what is happening at school, without chasing anyone.",
-    desc: "Parents get real-time visibility into attendance, results, fees and homework — all without calling the school.",
+    desc: "Parents get real-time visibility into attendance, results, fees and homework, without ever needing to call the school.",
     modules: [
       { icon: "✅", name: "Attendance", desc: "See your child's daily attendance in real time. Get notified if they're marked absent." },
       { icon: "📊", name: "Marks", desc: "View exam results as soon as the teacher publishes them. Track progress across terms." },
@@ -46,7 +46,7 @@ const roles = [
   {
     icon: "🎒", label: "Student", color: "#86198F", bg: "#FDF2F8", border: "#F5D0FE",
     tagline: "Everything they need for the school day, right here.",
-    desc: "Students have their own dedicated view — timetable, homework, results and notices without any clutter.",
+    desc: "Students have their own dedicated view with timetable, homework, results and notices, without any clutter.",
     modules: [
       { icon: "📅", name: "Timetable", desc: "View the day's schedule at a glance. Always in sync with what the school has set." },
       { icon: "📚", name: "Homework", desc: "See pending assignments with due dates. Organised by subject so nothing slips through." },

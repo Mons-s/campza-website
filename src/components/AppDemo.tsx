@@ -311,7 +311,7 @@ export default function AppDemo() {
             A real look at the app
           </h2>
           <p className="text-sm mt-4 max-w-md mx-auto" style={{ color: "rgba(255,255,255,0.45)" }}>
-            Tap through the screens below — this is exactly what your staff, parents and students will see.
+            Tap through the screens below. This is exactly what your staff, parents and students will see.
           </p>
         </div>
 
@@ -390,7 +390,7 @@ export default function AppDemo() {
 const descriptions: Record<string, { title: string; desc: string; bullets: string[] }> = {
   dashboard: {
     title: "Admin Dashboard",
-    desc: "Everything your school admin needs at a glance — students, staff, attendance and fee status, all on one screen.",
+    desc: "Everything your school admin needs at a glance: students, staff, attendance and fee status, all on one screen.",
     bullets: ["Live student and staff counts", "Today's attendance rate", "Pending fees summary", "One-tap access to all modules"],
   },
   attendance: {

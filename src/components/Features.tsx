@@ -2,7 +2,7 @@ const features = [
   { icon: "✅", bg: "#EEF2FF", title: "Attendance", desc: "Teachers mark it in seconds. Parents see it the same moment. No more calling the school to find out if your child turned up." },
   { icon: "📊", bg: "#F0FDF4", title: "Marks & Results", desc: "Enter subject-wise marks after each exam. Totals and grades calculate automatically. Students and parents see results the same day." },
   { icon: "💳", bg: "#FFF7ED", title: "Fee Collection", desc: "Set up fee terms, track who has paid and who hasn't, and let parents pay online. No cash queues at the office." },
-  { icon: "📚", bg: "#FDF2F8", title: "Homework", desc: "Teachers post homework by subject and due date. Students and parents see it straight away — no WhatsApp group needed." },
+  { icon: "📚", bg: "#FDF2F8", title: "Homework", desc: "Teachers post homework by subject and due date. Students and parents see it straight away, with no WhatsApp group needed." },
   { icon: "📅", bg: "#F0F9FF", title: "Timetable", desc: "Build your class schedule once. Teachers, students and parents can view it from any device, whenever they need to." },
   { icon: "📢", bg: "#FEF9EE", title: "Notice Board", desc: "Send announcements to the whole school or just one class. Push notifications make sure nothing gets buried." },
   { icon: "💬", bg: "#F5F3FF", title: "Parent–Teacher Chat", desc: "Direct messaging between parents and teachers, inside the app. No personal numbers shared, no chats going missing." },
@@ -10,7 +10,7 @@ const features = [
   { icon: "📄", bg: "#F0FDF4", title: "Certificates & TC", desc: "Generate Transfer Certificates and completion certificates in seconds. Download as PDF and share directly from the app." },
   { icon: "🚌", bg: "#E8F5E9", title: "School Bus", desc: "Create routes and stops, assign students to their boarding point, and let parents see bus details and timings." },
   { icon: "📋", bg: "#F5F3FF", title: "Leave Management", desc: "Parents apply for leave from the app. Teachers approve and it reflects in attendance automatically." },
-  { icon: "🪪", bg: "#EEF2FF", title: "ID Cards", desc: "Generate photo ID cards for students and staff in bulk. Download and print instantly — no design software needed." },
+  { icon: "🪪", bg: "#EEF2FF", title: "ID Cards", desc: "Generate photo ID cards for students and staff in bulk. Download and print instantly, with no design software needed." },
 ];
 
 export default function Features() {
