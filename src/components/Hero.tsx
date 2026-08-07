@@ -156,8 +156,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile: center icon + cycling card — hidden on mobile, visible on md+ */}
-        <div className="hidden md:block">
+        {/* Mobile: center icon + cycling card */}
+        <div className="md:hidden">
           <MobileHero />
         </div>
 
