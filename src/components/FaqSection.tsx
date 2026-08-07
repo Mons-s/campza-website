@@ -14,9 +14,9 @@ const faqs = [
 export default function FaqSection() {
   const [open, setOpen] = useState<number | null>(null);
   return (
-    <section className="py-20 px-8 bg-white">
+    <section className="py-12 md:py-20 px-8 bg-white">
       <div className="max-w-3xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-8 md:mb-12">
           <div className="text-xs font-bold tracking-widest uppercase mb-2.5" style={{ color: "var(--blue)" }}>FAQ</div>
           <h2 className="text-3xl font-black tracking-tight" style={{ color: "var(--navy)", textWrap: "balance" }}>
             Common questions

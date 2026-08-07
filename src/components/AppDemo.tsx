@@ -321,10 +321,10 @@ export default function AppDemo() {
   };
 
   return (
-    <section className="py-24 px-8" style={{ background: "var(--navy)" }}>
+    <section className="py-12 md:py-24 px-8" style={{ background: "var(--navy)" }}>
       <style>{`@keyframes progress { from { width: 0% } to { width: 100% } }`}</style>
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
+        <div className="text-center mb-8 md:mb-14">
           <div className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: "rgba(90,122,232,0.8)" }}>See it in action</div>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white" style={{ textWrap: "balance" }}>
             A real look at the app

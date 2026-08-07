@@ -43,9 +43,9 @@ export default function Home() {
         <Hero />
 
         {/* Feature highlights */}
-        <section className="py-24 px-8 bg-white">
+        <section className="py-12 md:py-24 px-8 bg-white">
           <div className="max-w-6xl mx-auto">
-            <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+            <div className="mb-8 md:mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
               <div>
                 <div className="text-xs font-bold tracking-widest uppercase mb-2.5" style={{ color: "var(--blue)" }}>What it does</div>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: "var(--navy)", textWrap: "balance" }}>
@@ -73,9 +73,9 @@ export default function Home() {
         <AppDemo />
 
         {/* Role cards */}
-        <section className="py-24 px-8" style={{ background: "var(--light)" }}>
+        <section className="py-12 md:py-24 px-8" style={{ background: "var(--light)" }}>
           <div className="max-w-6xl mx-auto">
-            <div className="mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+            <div className="mb-8 md:mb-14 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
               <div>
                 <div className="text-xs font-bold tracking-widest uppercase mb-2.5" style={{ color: "var(--blue)" }}>Who uses CampZa</div>
                 <h2 className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: "var(--navy)", textWrap: "balance" }}>
@@ -99,7 +99,7 @@ export default function Home() {
         </section>
 
         {/* Why CampZa */}
-        <section className="py-20 px-8 bg-white">
+        <section className="py-12 md:py-20 px-8 bg-white">
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="text-xs font-bold tracking-widest uppercase mb-2.5" style={{ color: "var(--blue)" }}>Why CampZa</div>
@@ -124,7 +124,7 @@ export default function Home() {
         <FaqSection />
 
         {/* CTA */}
-        <section className="py-20 px-8 text-center" style={{ background: "var(--navy)" }}>
+        <section className="py-12 md:py-20 px-8 text-center" style={{ background: "var(--navy)" }}>
           <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white mb-4" style={{ textWrap: "balance" }}>
             Your school deserves better tools.
           </h2>
