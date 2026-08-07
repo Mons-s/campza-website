@@ -156,8 +156,10 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Mobile: center icon + cycling card */}
-        <MobileHero />
+        {/* Mobile: center icon + cycling card — hidden on mobile, visible on md+ */}
+        <div className="hidden md:block">
+          <MobileHero />
+        </div>
 
         {/* Desktop: orbit graphic */}
         <div className="hidden md:flex justify-center items-center relative" style={{ height: 500 }}>
